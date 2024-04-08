@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import About from "./Components/About";
+import ErrorPage from "./Components/ErrorPage";
+import Header from "./Components/Header";
+import PageOne from "./Components/PageOne";
+import PostPage from "./Components/PostPage";
+import { Routes, Route, Link } from "react-router-dom";
+import PostPageTwo from "./Components/PostPageTwo";
+import PostPageThree from "./Components/PostPageThree";
+import Home from "./Components/Home";
+import PostNav from "./Components/PostNav";
+import Footer from "./Components/Footer";
+import NewPost from "./Components/NewPost";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <nav>
+        <Header />
+        <About />
+        <PostNav />
+        <PostPage />
+        <Home />
+        <ErrorPage />
+        <Footer />
+        <NewPost />
+      </nav>
     </div>
   );
 }
